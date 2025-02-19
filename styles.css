@@ -1,0 +1,165 @@
+/* General Styling - This is the general CSS styling. The web app uses the "Inter" typeface provided through Google Fonts. */
+
+html {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Completed Task Styling - The "completed" class is toggled by the javascript function. This styling greys out, puts a line through the content, and lowers the opacity for a completed task. */
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.4;
+}
+
+h1 {
+  font-size: clamp(3rem, 5vw, 10rem);
+}
+
+body {
+  background-image: url("background.svg");
+  background-size: auto;
+  background-position: center center;
+  background-repeat: repeat;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  background-color: rgb(112, 174, 227);
+}
+
+hr {
+  height: 5px;
+  color: black;
+}
+
+.todoApp {
+  display: grid;
+  gap: 20px;
+  background-color: rgb(205, 215, 237);
+  padding: 24px;
+  box-shadow: 10px 10px rgba(20, 60, 112, 0.678);
+  border: 2px solid black;
+  border-radius: 12px;
+  width: 600px;
+}
+
+#todoForm {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#todoList {
+  width: 100%;
+}
+
+/* Task List Styling - This CSS ensures the list that is created in the to-do list does not have bullet points and is styled with the buttons on the far right side. */
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+span {
+  font-weight: 700;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin-right: 20px;
+  width: 100%;
+}
+
+/* Input and Button Styling - Below is the styling for the various input, checkbox, and button elements. */
+
+input {
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-right: 12px;
+  padding-left: 8px;
+  flex-grow: 1;
+  box-sizing: 0;
+  box-shadow: inset 2px 2px 2px rgb(180, 180, 180);
+  background-color: rgb(255, 255, 255);
+}
+
+.completedBox {
+  margin-right: 12px;
+  flex-grow: 0;
+}
+
+button {
+  background-color: rgb(231, 42, 83);
+  width: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: white;
+  margin: 6px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+button:hover {
+  background-color: rgb(242, 89, 122);
+  cursor: pointer;
+}
+
+.button_secondary {
+  background-color: rgb(31, 71, 203);
+  border-radius: 8px;
+  border: 2px solid black;
+  color: white;
+}
+
+.button_secondary:hover {
+  background-color: rgb(63, 100, 222);
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: black;
+  border: 2px solid black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  font-family: "Just Another Hand", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+}

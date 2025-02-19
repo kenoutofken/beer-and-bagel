@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beer & Bagel: The To Do List Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="todoApp">
+      <!-- This is the input area where the user enters tasks to add to the list. -->
+      <form id="todoForm">
+        <input
+          tabindex="0"
+          type="text"
+          name="task"
+          placeholder="Enter a task... (40 Character Maximum)"
+        />
+        <button
+          class="button_secondary"
+          type="submit"
+          name="submit"
+          value="submit"
+        >
+          Submit
+        </button>
+      </form>
+      <!-- This is the to-do list. Two placeholder tasks are shown in the code below that demonstrate the functionality. -->
+      <div id="todoList">
+        <ul>
+          <li>
+            <span style="float: left">Eat a bagel.</span>
+            <input class="completedBox" type="checkbox" />
+            <button>Edit</button>
+            <button>Remove</button>
+          </li>
+          <li>
+            <span>Drink a beer.</span>
+            <input class="completedBox" type="checkbox" />
+            <button>Edit</button>
+            <button>Remove</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>
+          Crafted with 💦 sweat, 😢 tears, and ☕ too much caffeine by Ken Yau.
+          <i class="fa fa-copyright"></i> 2025.
+        </p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

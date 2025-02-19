@@ -1,8 +1,7 @@
 ** README ** Beer & Bagel: The To-Do List Maker
-—-------------------------------------
 
 Introductions:
-—-------------
+
 B&B is a to-do list web app that allows the user to add, update,
 and remove tasks to a list. It uses JavaScript to create this
 functionality.
@@ -12,7 +11,7 @@ The JavaScript, HTML, and CSS was customized to enable
 functionality of this app as a to-do list maker.
 
 Instructions:
-—------------
+
 1. Open the ‘index.html’ file in the directory to begin the app.
 2. Two default entries are provided as examples for how the app
 will display tasks as they are added to the list.
@@ -26,7 +25,6 @@ the input and add the task to the list.
 input box will appear that will allow for editing the task.
 
 Known Issues or Limitations:
-—---------------------------
 
 - The 40 character limit is due to the fact that the inputs
 will create a <span> container that is all in one line,
